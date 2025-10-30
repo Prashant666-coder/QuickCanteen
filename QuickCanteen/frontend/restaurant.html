@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu - QuickCanteen</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./favlogo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favlogo.png">
+  <link rel="apple-touch-icon" href="./favlogo.png">
+  <link rel="shortcut icon" href="./favlogo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">QuickCanteen</a>
+      <div class="header-actions">
+        <button id="cart-btn" class="btn btn-secondary" aria-label="Cart">
+          Cart <span id="cart-count" class="badge">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section section-light" style="padding-top:1.25rem;">
+    <div class="container">
+      <div class="section-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <h2 id="restaurant-title">Restaurant</h2>
+        <a href="index.html#menu" class="btn btn-secondary">← Back</a>
+      </div>
+      <div id="category-row" class="categories-row" aria-label="Categories"></div>
+      <div id="menu-grid" class="menu-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <div id="cart-overlay" class="overlay hidden" aria-hidden="true"></div>
+  <aside id="cart-drawer" class="cart-drawer hidden" aria-label="Cart" aria-modal="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="modal-close" aria-label="Close">×</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span id="cart-total">₹0</span></div>
+      <div class="cart-actions">
+        <button id="continue-btn" class="btn">Continue</button>
+        <button id="checkout-btn" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="simple_restaurant.js"></script>
+</body>
+</html>

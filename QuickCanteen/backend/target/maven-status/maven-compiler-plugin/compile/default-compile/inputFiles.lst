@@ -1,0 +1,9 @@
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/QuickCanteenApplication.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/config/WebConfig.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/controller/AuthController.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/controller/MenuController.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/controller/OrderController.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/model/MenuItem.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/model/Order.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/model/User.java
+/Users/prashanttripathi/Documents/MiniProject/Mini_Project/QuickCanteen/backend/src/main/java/com/quickcanteen/repo/InMemoryStore.java
