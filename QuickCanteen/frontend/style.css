@@ -4,10 +4,283 @@ body {
   margin: 0;
   line-height: 1.6;
   color: #333;
-  background-color: #f9fafb;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Dark Mode Styles */
+html.dark {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html.dark .header {
+  background: #1e293b;
+  border-bottom-color: #334155;
+}
+
+html.dark .logo {
+  color: #f97316;
+}
+
+html.dark .desktop-menu a {
+  color: #cbd5e1;
+}
+
+html.dark .desktop-menu a:hover {
+  background: #334155;
+  color: #f97316;
+}
+
+html.dark .mobile-menu {
+  background-color: #1e293b;
+  border-top-color: #334155;
+}
+
+html.dark .mobile-menu a:hover {
+  background-color: #334155;
+}
+
+html.dark .section-light {
+  background-color: #0f172a;
+}
+
+html.dark .card,
+html.dark .menu-item,
+html.dark .restaurant-card {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+html.dark .menu-item h3,
+html.dark .restaurant-header h3 {
+  color: #f1f5f9;
+}
+
+html.dark .restaurant {
+  color: #94a3b8;
+}
+
+html.dark .chip {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .chip:hover {
+  border-color: #475569;
+  background: #334155;
+}
+
+html.dark .chip.active {
+  background: #f97316;
+  color: #fff;
+  border-color: #f97316;
+}
+
+html.dark .modal-content {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .modal-content h3 {
+  color: #f1f5f9;
+}
+
+html.dark .tabs {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html.dark .tab {
+  color: #94a3b8;
+}
+
+html.dark .tab:hover {
+  background: #334155;
+}
+
+html.dark .tab.active {
+  background: #1e293b;
+  color: #f97316;
+}
+
+html.dark .form input {
+  background: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+html.dark .form label span {
+  color: #94a3b8;
+}
+
+html.dark .cart-drawer {
+  background: #1e293b;
+  box-shadow: -10px 0 28px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .cart-header {
+  background: #1e293b;
+  border-bottom-color: #334155;
+}
+
+html.dark .cart-items {
+  background: #1e293b;
+}
+
+html.dark .cart-row {
+  border-bottom-color: #334155;
+}
+
+html.dark .cart-item-name {
+  color: #f1f5f9;
+}
+
+html.dark .cart-item-price {
+  color: #94a3b8;
+}
+
+html.dark .cart-footer {
+  background: #1e293b;
+  border-top-color: #334155;
+}
+
+html.dark .payment-box {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html.dark .address-box textarea {
+  background: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+html.dark .qty-controls {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html.dark .menu-fab,
+html.dark .menu-stepper {
+  background: #334155;
+  border-color: #475569;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+html.dark .menu-fab:hover {
+  background: #475569;
+}
+
+html.dark .modal-close {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+html.dark .btn-secondary {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+html.dark .btn-secondary:hover {
+  background-color: #334155;
+}
+
+html.dark .footer {
+  background-color: #0f172a;
+}
+
+html.dark .section-subtitle {
+  color: #94a3b8;
+}
+
+html.dark .restaurant-cuisine,
+html.dark .restaurant-address {
+  color: #94a3b8;
+}
+
+html.dark a {
+  color: #cbd5e1;
+}
+
+html.dark .restaurant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+  border-color: #475569;
+}
+
+html.dark .hero-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+html.dark .cart-thumb {
+  border-color: #475569;
+}
+
+html.dark .price {
+  color: #fb923c;
+}
+
+html.light {
+  background-color: #ffffff;
 }
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 :root { --header-height: 72px; }
+
+/* Theme Toggle Switch */
+#mode {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: #cbd5e1;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+#mode::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+html.dark #mode {
+  background: #475569;
+}
+
+html.dark #mode::before {
+  transform: translateX(30px);
+  background: #f97316;
+}
+
+#mode:hover {
+  opacity: 0.9;
+}
 
 /* Container */
 .container {

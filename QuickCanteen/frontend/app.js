@@ -1,3 +1,5 @@
+
+
 // Basic mobile menu toggle and smooth scrolling
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');

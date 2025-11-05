@@ -66,6 +66,7 @@ curl -X POST http://localhost:8080/api/orders \
 
 ```bash
 cd "frontend"
+npx serve
 python3 -m http.server 5500
 ```
 Then open http://localhost:5500 in your browser.
